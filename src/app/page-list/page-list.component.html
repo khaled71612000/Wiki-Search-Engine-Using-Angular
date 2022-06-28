@@ -1,0 +1,26 @@
+<table class="table is-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Word Count</th>
+            <th>Snippet</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let page of pages">
+            <!-- when clicked make title is a ref of page + pageid of same page -->
+            <!-- target blank makes open in new tab -->
+            <!-- bind href to run js in "" -->
+            <td>
+                <a target="_blank"[href] ="'https://en.wikipedia.org?curid=' + page.pageid">
+                    {{ page.title }}
+            </a>
+            </td>
+            <td>{{ page.wordcount }}</td>
+            <!-- page snipper {{}} gives u plain html cause angular helps
+            u escape html using angular escaper makes <span> &gt;span&tl;-->
+           <!-- inner html makes text into span elemnt and removes any malious js -->
+                <td [innerHtml]="page.snippet" ></td>
+        </tr>
+    </tbody>
+</table>

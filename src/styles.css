@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bulma\css\bulma.css';
+
+/* make search terms be bold in snippets */
+/* but if u do in page-list it styles inside page0list comp
+the searchmatch class isnt here */
+.searchmatch {
+    font-weight: bold;
+}
