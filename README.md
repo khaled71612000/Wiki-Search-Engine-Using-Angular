@@ -1,4 +1,9 @@
-# Wsearch
+Wiki Search Engine Using Angular is a project that demonstrates how to build a search engine using Angular. It allows users to search for Wikipedia articles and retrieve results in real-time.
+
+Features
+Angular Framework: Built with Angular CLI version 10.1.0.
+Real-time Search: Fetches and displays Wikipedia search results dynamically.
+Responsive Design: Optimized for various devices.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
